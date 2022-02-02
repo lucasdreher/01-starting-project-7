@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { uiActions } from '../../store/ui-slice';
 
 const CartButton = (props) => {
-	const dispatch = useDispatch;
+	const dispatch = useDispatch();
 	const toggleCartHandler = () => {
 		dispatch(uiActions.toggle());
 	};
