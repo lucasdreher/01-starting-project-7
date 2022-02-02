@@ -22,7 +22,13 @@ const Products = (props) => {
 			<h2>Buy your favorite products</h2>
 			<ul>
 				{DUMMY_PRODUCTS.map((product) => (
-					<ProductItem key={product.id} title={product.name} price={product.price} description={product.description} />
+					<ProductItem
+						key={product.id}
+						id={product.id}
+						name={product.name}
+						price={product.price}
+						description={product.description}
+					/>
 				))}
 			</ul>
 		</section>
