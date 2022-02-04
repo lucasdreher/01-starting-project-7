@@ -14,7 +14,7 @@ const Notification = (props) => {
 
 	return (
 		<section className={cssClasses}>
-			<h2>{props.title}</h2>
+			<h2>{props.name}</h2>
 			<p>{props.message}</p>
 		</section>
 	);
